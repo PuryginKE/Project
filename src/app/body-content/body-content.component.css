@@ -1,0 +1,13 @@
+
+
+.content{
+    height: 600px;
+    width: 95%;
+    border-radius: 1px;
+    margin: 30px auto;
+    background-color: white;
+     color: black;
+     box-shadow: 0 0 1px rgba(0,0,0,0.5);
+     grid-column: 2;
+ }
+ 

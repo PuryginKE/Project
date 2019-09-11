@@ -1,0 +1,72 @@
+.comments {
+  padding-top: 10px;
+  height: 60px;
+  /* width: 600px; */
+  display: flex;
+  align-items: center;
+
+}
+
+.apply-offer {
+   color: white;
+   font-weight: bold;
+   font-size: 25px;
+   height: 40px;
+   margin-left: 15px;
+   width: 40px;
+   line-height: 40px;
+   text-align: center;
+   border-radius: 4px;
+   cursor: pointer;
+   user-select: none;
+   background-color: #444;
+
+}
+.apply-offer.select {
+  background-color: rgb(64,199,129);
+
+}
+.apply-offer-href {
+   padding-left: 20px;
+}
+
+.apply-offer-href > span {
+   cursor: pointer;
+   color: green;
+   border-bottom: 1px dotted;
+}
+
+.apply-offer:hover {
+   background-color: rgb(64,199,129);
+}
+
+.comment {
+  width: 100%;
+}
+
+.comment p {
+  margin: 0 0 10px 0;
+}
+
+.dialog {
+  position: relative;
+  background: #fff;
+  color: #222;
+  border-radius: 3px;
+  margin-left: 20px;
+  width: 400px;
+  height: 100%;
+}
+
+.dialog::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 15px solid #fff;
+  left: -15px;
+  top: 15px;
+}

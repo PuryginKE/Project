@@ -1,0 +1,35 @@
+<div class="case_grid">
+  <div class="head">
+          Статус
+         
+       </div>
+<div class="head">
+Осталось времени
+</div>
+<div class="head">
+Участники 
+</div>
+<div class="head">
+Информация
+</div>
+<div class="head">
+Ознакомиться
+</div>
+<div class="cont" > 
+  <h5 style="margin:50px auto;">Активен</h5>
+</div>
+<div class="cont" > 
+<h5 style="margin:50px auto;">{{ data.dateof | date:'medium'}}</h5>
+</div>
+<div class="cont">
+<h5 style="margin:50px auto;">
+    {{ data.participal }}
+</h5>
+</div>
+<div class="cont" metColumnDef="value">
+<h5 *appHighlight="data.name; filter:filterValue" style="margin:50px auto;"></h5>
+</div>
+<div class="cont">
+<a [routerLink]="['/list/case/'+data.id]">  <img style="margin:30px auto; padding-top:20px; width: 80px; height: 80px; margin: 0 auto;" src="/assets/pic/law.png"></a>
+</div>
+</div>

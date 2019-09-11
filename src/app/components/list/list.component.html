@@ -1,0 +1,29 @@
+<section class="content_grid">
+  
+
+    <div class="menu"> 
+        <app-menu-content>
+          <div class="button_menu">
+          <div class="filter">
+             <button>Фильтры (+)</button>
+          </div>
+          <p>Поиск аукционов</p>
+          <div class="search">
+              <input  (keyup)="searchRecords($event)"  placeholder="Поиск аукционов">
+            </div>
+          </div>
+        </app-menu-content>
+      </div>
+
+    <div [ngClass]="{spinner:httpService._spinner$ | async }" class="content" >
+        
+       <!---- <button [routerLink]="['/case/1']">Пост1</button> --->
+      <ul>
+          <li *ngFor="let name_ps of name_p" [routerLink]="['case/' + name_ps.id]" style="list-style-type: none; width:95%;">  <app-caseend [data]="name_ps" [filterValue]="httpService.searchValue"></app-caseend></li>
+      </ul>
+     
+        
+    </div>
+
+</section>
+

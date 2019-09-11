@@ -1,0 +1,25 @@
+<div *ngFor="let data of topList">
+  <div class="toplist-name">
+     <a [routerLink]="['/']">{{ data.name }}</a> 
+  </div>
+  <div class="toplist-info">
+      <ul>
+          <li>
+            <h4>Создатель:</h4><h5>{{ data.nameu }}</h5>
+         </li>
+          <li>
+              <h4>Цена:</h4><h5>{{ data.price }}руб.</h5>
+          </li>
+          <li>
+              <h4>Участников:</h4><h5>{{ data.participal}}</h5>
+          </li>
+          <li>
+              <h4>Начало:</h4><h5>{{ data.dateon | date:'MM.dd.yyyy' }}</h5>
+          </li>
+          <li>
+              <h4>Конец:</h4><h5>{{ data.dateof | date:'MM.dd.yyyy' }}</h5>
+          </li>
+        </ul>
+  </div>
+</div>
+

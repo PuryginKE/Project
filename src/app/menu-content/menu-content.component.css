@@ -1,0 +1,41 @@
+.menu_content{
+    height: 80%;
+    width: 60%;
+    margin: 40px auto;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+ 
+}
+.menu_content nav{
+    
+    flex-direction: row;
+  
+}
+.button_menu{
+    padding-top: 10px;   
+     outline: none;
+     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;  
+    border-radius: 3px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+.button_menu:hover{
+    padding-top: 10px;   
+    padding-bottom: 10px;  
+   background: rgb(207, 207, 207); 
+}
+
+.box{
+    margin-top:20px;
+}
+.container-1{
+   float: left;
+}
+#search{
+    margin-left: 3px;
+    width: 110px;
+    border-radius: 10px;
+}

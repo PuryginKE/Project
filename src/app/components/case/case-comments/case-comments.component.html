@@ -1,0 +1,9 @@
+<div class="comments">
+  <div class="comment dialog">
+      <p></p>
+  </div>
+  <div class="apply-offer" [ngClass]="{ 'select': selected }" (click)="onApply()">+</div>
+  <div class="apply-offer-href" *ngIf="selected" (click)="onEnterPart">
+      Исполнитель выбран.<br>Перейдите по <span [routerLink]="['/chat']">ссылке</span> для завершения аукциона
+  </div>
+</div>

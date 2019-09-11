@@ -1,0 +1,35 @@
+
+<section class="header_container">
+    <div class="item-a">
+            <div class="logo">
+                    <a class="logo_button" [routerLink]="['/']"><img src="/assets/pic/logo.png"></a>
+                </div>
+    </div>
+   <div class="item-b">
+        <div class="ip">
+                <a class="ip_button" [routerLink]="['/list/type/fiz']">Физические Лица</a>
+            </div>
+   </div>
+   <div class="item-c">
+        <div class="yur">
+                <a class="yur_button" [routerLink]="['/list/type/yur']">Юридические Лица</a>
+            </div>
+   </div>
+    <div *ngIf="!(authService.isAuth$ | async)" class="item-d">
+            <div class="auth">
+                    <a class="auth_button" [routerLink]="['/auth']"><img src="/assets/pic/auth.png">Вход</a>
+                </div>
+    </div>
+    <div *ngIf="(authService.isAuth$ | async)"  class="item-d">
+            <div class="create_case" >
+                <a class="create_button" [routerLink]="['/create']"><img src="">Создать задание </a>
+            </div>
+            <div class="info_user">
+                <a class="info_button" [routerLink]="['/info']"><img src="">Информация пользователя </a>
+            </div>
+            <div class="ifauth">
+                    <a class="ifauth_button" (click)="onExit()"><img src="">Выход</a>
+                </div>
+    </div>
+    
+</section>

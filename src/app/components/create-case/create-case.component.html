@@ -1,0 +1,93 @@
+<section class="content_grid">
+  
+
+    <div class="menu"> 
+        <app-menu-content>Тех.Поддержка</app-menu-content>
+      </div>
+
+    <div class="content">
+        
+      <div class="content_all_case">
+          <form [formGroup]="caseForm" class="content_case">
+              <span class="title_case">
+                Создание тендера
+              </span>
+
+              <div class="all_case">
+                  <div class="left_content">
+                     Тема тендера
+                    </div>
+                  <div class="right_content">
+                      <input  formControlName="name" class="theme_case" type="text" name="login" placeholder="текст...">
+               
+                  </div>
+              </div>
+      
+              
+              <div class="all_case">
+                  <div class="left_content">
+                     Тип аукциона
+                    </div>
+                  <div class="radio">
+                      <input  formControlName="type" id="yur" type="radio" name="type" value="Юр.Лицо">
+                      <label for="yur">Юр.Лицо</label>
+                      <input  formControlName="type" id="fiz" type="radio" name="type" value="Физ.Лицо">
+                      <label for="fiz">Физ.Лицо</label>
+                  </div>
+              </div>
+
+              <div class="all_case">
+                  <div class="left_content">
+                     Информация
+                    </div>
+                  <div class="right_content">
+                      <input  formControlName="info" class="info_case" type="text" name="login" placeholder="текст...">
+               
+                  </div>
+              </div>
+
+              <div class="all_case">
+                  <div class="left_content">
+                     Дата начала
+                    </div>
+                  <div class="right_content">
+                      <input  formControlName="dateon" class="date" type="text" name="login" placeholder="дата">
+                   
+                  </div>
+              </div>
+              <div class="all_case">
+                  <div class="left_content">
+                     Дата окончания
+                    </div>
+                  <div class="right_content">
+                      <input  formControlName="dateoff" class="date" type="text" name="login" placeholder="дата">
+                   
+                  </div>
+              </div>
+              
+              
+              <div class="all_case">
+                  <div class="left_content">
+                     Начальная цена
+                    </div>
+                  <div class="right_content">
+                      <input  formControlName="price" class="price" type="text" name="login" placeholder="желаемая цена">
+                  
+                  </div>
+              </div>
+
+              <div class="button_case">
+                <button (click)="onCreateCase()" class="login100-form-btn">
+                  Создать тендер
+                </button>
+              </div>
+      
+            
+            </form>
+      </div>
+     
+     
+        
+    </div>
+
+</section>

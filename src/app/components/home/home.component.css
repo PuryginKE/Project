@@ -1,0 +1,198 @@
+.content_grid{
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+}
+
+.menu{
+    height: 400px;
+    grid-column: 1;
+    width: 90%;
+    margin-left: 22px;
+    background-color: white;
+     color: black;
+     border-radius: 1px;
+     box-shadow: 0 0 1px rgba(0,0,0,0.5);
+ }
+ 
+.content{
+    height: auto;
+    width: 97%;
+    min-height: 730px;
+    border-radius: 1px;
+    margin: 30px auto;
+    background-color: white;
+     color: black;
+     box-shadow: 0 0 1px rgba(0,0,0,0.5);
+     grid-column: 2;
+ }
+ 
+ .p{
+    font-family: 'Open Sans', Arial, sans-serif;
+ }
+ .container_block{
+    display: grid;
+    grid-template-columns: 300px  auto 300px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "pic news  law"
+        "stat picstat picstat";
+ }
+ .item-a{
+    
+     height: 400px;
+  
+ }
+ .item-b{
+   
+}
+.item-c{
+    
+}
+.item-d{
+   
+    height: 300px;
+}
+.item-e{
+  
+}
+.item-f{
+    
+}
+
+.callback{
+   padding-top: 20px;
+}
+
+.info{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    height: 95%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 15px;
+    box-shadow: 0 0 0.5px rgba(155, 155, 155, 0.3);
+}
+.info ul{
+    margin-left:-40px;
+    padding-top: 10px;
+}
+.info ul li{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 20px;
+}
+.info ul li img{
+    width:80px;
+    height: 80px;
+}
+
+.news{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    height: 95%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    box-shadow: 0 0 0.5px rgba(155, 155, 155, 0.3);
+}
+.news ul{
+    
+    padding-top: 10px;
+}
+.news ul li{
+    margin-top: 10px;
+    list-style-type: none;
+    
+}
+.news ul li img{
+    width:80px;
+    height: 80px;
+}
+.news ul li a{
+    text-decoration: none;
+}
+li h1{
+    color: rgb(192, 0, 0);
+}
+.law{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    height: 95%;
+    background-color: rgb(255, 255, 255);
+    
+    box-shadow: 0 0 0.5px rgba(155, 155, 155, 0.3);
+}
+.law ul{
+    margin-left:-40px;
+    padding-top: 10px;
+}
+.law ul li{
+    list-style-type: none;
+    text-align: center;
+}
+.law ul li img{
+    width:80px;
+    height: 80px;
+}
+
+.stat{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    height: 95%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 15px;
+    box-shadow: 0 0 0.5px rgba(155, 155, 155, 0.3);
+}
+.stat ul{
+    margin-left:-40px;
+    padding-top: 10px;
+}
+.stat ul li{
+    list-style-type: none;
+    text-align: center;
+}
+.stat ul li img{
+    width:80px;
+    height: 80px;
+}
+
+.statpic{
+    width: 95%;
+    height: 95%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    box-shadow: 0 0 0.5px rgba(155, 155, 155, 0.3);
+}
+.statpic ul{
+    margin-left:-40px;
+    padding-top: 10px;
+}
+.statpic ul li{
+    list-style-type: none;
+    text-align: center;
+}
+.statpic ul li img{
+    width:50px;
+    height: 50px;
+}
+
+.money_kot{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    height: 95%;
+    background-color: rgb(255, 255, 255);
+
+    box-shadow: 0 0 0.5px rgba(155, 155, 155, 0.3);
+}
+.money_kot ul{
+    margin-left:-40px;
+    padding-top: 10px;
+}
+.money_kot ul li{
+    list-style-type: none;
+    text-align: center;
+}
+.money_kot ul li img{
+    width:50px;
+    height: 50px;
+}

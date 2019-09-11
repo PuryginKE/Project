@@ -1,0 +1,30 @@
+<div *ngIf="condition; then thenBlock else elseBlock"></div>   
+    <ng-template #elseBlock>
+         <div style="min-height: 500px;">
+                <app-callback></app-callback>
+                <button (click)="callBack()">help</button>
+        </div>
+     </ng-template>  
+     <ng-template #thenBlock>
+            <section class="content_grid">
+                    <div class="menu"> 
+                        <app-menu-content>
+                            <p>
+                                Тех.Поддержка
+                                <br>
+                                support@yt.ru
+                            </p>
+                        </app-menu-content>
+                        <div class="callback_btn">
+                            <button (click)="callBack()">help</button>
+                        </div>
+                      </div>
+                     
+                    <div class="content">
+                        <app-home-content></app-home-content>
+                    </div>
+                
+                </section>
+                
+            </ng-template>    
+

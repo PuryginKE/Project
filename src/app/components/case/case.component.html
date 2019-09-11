@@ -1,0 +1,37 @@
+<section class="content_grid" *ngIf="data">
+
+
+    <div class="menu">
+        <app-menu-content>Тех.Поддержка</app-menu-content>
+    </div>
+
+    <div class="content">
+
+        <div class="body_cont">
+            <div class="theme">Тема: {{ data.name}}</div>
+
+            <div class="time">Дата размещения: {{ data.dateof | date:'medium'}}</div>
+            <div class="info">{{ data.info }}</div>
+            <div class="info_user">Информация: <br>Создатель: {{ data.nameu }}<br>Цена: {{ data.price }}<br>Участники:
+                {{ data.participal }}</div>
+        </div>
+        <div class="comments_cont">
+            <div class="comment_left">
+                <app-case-comments></app-case-comments>
+                <app-case-comments></app-case-comments>
+                <app-case-comments></app-case-comments>
+                <app-case-comments></app-case-comments>
+            </div>
+            <div class="comment_right">
+                <button>Ввести комментарий</button>
+                <input placeholder="Комментарий..." style="height: 200px;">
+                <button type="file"> Выбрать файл </button>
+            </div>
+        </div>
+        <div class="button_enter_user">
+            <button (click)="onEnterCase($event)">Участвовать</button>
+        </div>
+
+    </div>
+
+</section>

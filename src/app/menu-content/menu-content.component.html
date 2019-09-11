@@ -1,0 +1,24 @@
+
+<div class="menu_content">
+  <nav>
+    <div class="button_menu"  [routerLink]="['/']">
+       Главная
+    </div>
+    <div class="button_menu" [routerLink]="['/list']">
+       Все тендеры
+    </div>
+    <div class="button_menu" [routerLink]="['/']">
+      Активные
+    </div>
+    <div class="button_menu" [routerLink]="['/']">
+       Выполненые
+    </div>
+    <div class="button_menu" [routerLink]="['/']">
+       Аналитика
+    </div>
+    <hr>
+    <div >
+     <ng-content></ng-content>
+   </div>
+  </nav>
+</div>
